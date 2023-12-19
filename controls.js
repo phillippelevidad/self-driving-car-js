@@ -19,15 +19,24 @@ class Controls {
     document.onkeydown = (e) => {
       switch (e.key) {
         case "ArrowUp":
+        case "W":
+        case "w":
           this.forward = true;
           break;
+
         case "ArrowLeft":
+        case "A":
+        case "a":
           this.left = true;
           break;
         case "ArrowRight":
+        case "D":
+        case "d":
           this.right = true;
           break;
         case "ArrowDown":
+        case "S":
+        case "s":
           this.reverse = true;
           break;
       }
@@ -35,15 +44,24 @@ class Controls {
     document.onkeyup = (e) => {
       switch (e.key) {
         case "ArrowUp":
+        case "W":
+        case "w":
           this.forward = false;
           break;
+
         case "ArrowLeft":
+        case "A":
+        case "a":
           this.left = false;
           break;
         case "ArrowRight":
+        case "D":
+        case "d":
           this.right = false;
           break;
         case "ArrowDown":
+        case "S":
+        case "s":
           this.reverse = false;
           break;
       }
