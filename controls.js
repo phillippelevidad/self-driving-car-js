@@ -1,4 +1,9 @@
 class Controls {
+  /**
+   * Constructs a Controls object.
+   * @param {string} type - The type of controls to initialize.
+   * Possible values: "KEYS", "DUMMY".
+   */
   constructor(type) {
     this.forward = false;
     this.left = false;
@@ -15,6 +20,9 @@ class Controls {
     }
   }
 
+  /**
+   * Adds keyboard event listeners to control the car.
+   */
   #addKeyboardListeners() {
     document.onkeydown = (e) => {
       switch (e.key) {

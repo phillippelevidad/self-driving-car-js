@@ -1,4 +1,10 @@
 class Road {
+  /**
+   * Road constructor.
+   * @param {number} x - The x-coordinate of the road.
+   * @param {number} width - The width of the road.
+   * @param {number} laneCount - The number of lanes in the road. Default is 3.
+   */
   constructor(x, width, laneCount = 3) {
     this.x = x;
     this.width = width;
@@ -22,6 +28,11 @@ class Road {
     ];
   }
 
+  /**
+   * Get the center x-coordinate of a specific lane.
+   * @param {number} laneIndex - The index of the lane.
+   * @returns {number} - The x-coordinate of the center of the lane.
+   */
   getLaneCenter(laneIndex) {
     const laneWidth = this.width / this.laneCount;
     const left = this.left + laneIndex * laneWidth;
@@ -29,10 +40,16 @@ class Road {
     return (left + right) / 2;
   }
 
+  /**
+   * Draw the road on the canvas.
+   * @param {CanvasRenderingContext2D} ctx - The rendering context of the canvas.
+   */
   draw(ctx) {
+    // Set the line width and color for the road markings
     ctx.lineWidth = 5;
     ctx.strokeStyle = "white";
 
+    // Draw the lane markings
     for (let i = 1; i <= this.laneCount - 1; i++) {
       const x = lerp(this.left, this.right, i / this.laneCount);
       ctx.setLineDash([20, 20]);
@@ -42,7 +59,10 @@ class Road {
       ctx.stroke();
     }
 
+    // Reset the line dash to solid
     ctx.setLineDash([]);
+
+    // Draw the road borders
     this.borders.forEach((border) => {
       ctx.beginPath();
       ctx.moveTo(border[0].x, border[0].y);
