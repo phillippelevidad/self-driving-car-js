@@ -8,7 +8,7 @@ This project is a simulation of self-driving cars using neural networks. It demo
 
 ## Motivation
 
-As someone just starting out in learning about machine learning, neural networks, and other forms of artificial intelligence, I built this project while following an excellent video tutorial by Dr. Radu Mariescu-Istodor at Free Code Camp. This hands-on project served as a practical way to understand the fundamentals of neural networks and their application in a simple yet intriguing domain.
+I'm just starting out in learning about machine learning, neural networks, and other forms of artificial intelligence, and I built this project while following an excellent video tutorial by Dr. Radu Mariescu-Istodor at Free Code Camp. This hands-on project served as a practical way to understand the fundamentals of neural networks and their application in a simple yet intriguing domain.
 
 Tutorial Source: [Dr. Radu Mariescu-Istodor - Free Code Camp](https://www.youtube.com/watch?v=Rs_rAxEsAvI)
 
@@ -18,7 +18,7 @@ This project is built using plain JavaScript, with minimal supporting HTML and C
 
 ## Installation and Setup
 
-No installation is necessary to run this project. Simply clone or download the repository, and open the index.html file in a web browser to start the simulation. To restart the simulation, reload the page.
+No installation is necessary to run this project. Simply clone or download the repository, and open the index.html file in a web browser to start the simulation. Reload the page to restart the simulation.
 
 ## How It Works
 
@@ -28,7 +28,7 @@ The simulation creates a road environment with fixed obstacles. A specified numb
 
 ### Neural Network Architecture
 
-Each car's movement is controlled by a neural network. The network makes decisions based on sensory inputs, guiding the car through the environment. The architecture is simplistic, yet sufficient to demonstrate basic decision-making in an AI-controlled vehicle.
+Each car's movement is controlled by a neural network. The network makes decisions based on sensory inputs, guiding the car through the environment. The architecture is simplistic, but enough to demonstrate basic decision-making in an AI-controlled vehicle.
 
 ### Genetic Algorithm
 
@@ -36,6 +36,6 @@ The project utilizes a genetic algorithm to improve the performance of the neura
 
 ### Acknowledgments
 
-Special thanks to Dr. Radu Mariescu-Istodor for creating the comprehensive course that inspired this project. His tutorial was instrumental in guiding the development of this simulation and in providing a solid foundation in neural networks and AI.
+Special thanks to Dr. Radu Mariescu-Istodor for creating the comprehensive course that inspired this project. His tutorial provided a solid foundation for me to learn more about neural networks and AI.
 
 Course Link: [Neural Networks and Self-Driving Cars Course - YouTube](https://www.youtube.com/watch?v=Rs_rAxEsAvI)
