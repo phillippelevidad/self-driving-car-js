@@ -25,7 +25,7 @@ class Car {
     }
   }
 
-  draw(ctx, color) {
+  draw(ctx, color, drawSensors = false) {
     ctx.fillStyle = this.damaged ? "red" : color ?? "black";
     ctx.beginPath();
     ctx.moveTo(this.polygon[0].x, this.polygon[0].y);
@@ -34,7 +34,7 @@ class Car {
     }
     ctx.fill();
 
-    this.sensors && this.sensors.draw(ctx);
+    this.sensors && drawSensors && this.sensors.draw(ctx);
   }
 
   update(roadBorders, traffic) {
